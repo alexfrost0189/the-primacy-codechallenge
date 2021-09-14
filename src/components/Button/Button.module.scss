@@ -1,0 +1,36 @@
+.Button {
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  transition: all .1s ease;
+  border-radius: 5px;
+  box-shadow: none;
+  outline: none;
+  background: none;
+  border: none;
+  min-width: 60px;
+  cursor: pointer;
+
+  &_transparent {
+    color: #222222;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+
+    &:hover {
+      background-color: #cccccc;
+    }
+  }
+  
+  &_default {
+    color: #ffffff;
+    border: 1px solid #5555ff;
+    background-color: #5555ff;
+    
+    &:hover {
+      color: #5555ff;
+      background-color: #ffffff;
+    }
+  }
+}

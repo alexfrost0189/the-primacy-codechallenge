@@ -1,0 +1,47 @@
+.TaskCard {
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 1px 0 3px #eeeeee;
+
+  &__row {
+    display: flex;
+    align-items: baseline;
+    padding: 0 0 10px;
+    justify-content: space-between;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__name {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__status {
+    font-size: 12px;
+    color: #5a75c9;
+    background-color: #dce9fe;
+    padding: 2px 7px;
+    border-radius: 3px;
+  }
+
+  &__iconText {
+    font-size: 12px;
+    line-height: 20px;
+    color: #555555;
+    padding-left: 25px;
+    position: relative;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
